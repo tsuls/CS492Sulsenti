@@ -245,6 +245,10 @@ asmlinkage long sys_setpgid(pid_t pid, pid_t pgid);
 asmlinkage long sys_setsid(void);
 asmlinkage long sys_setgroups(int gidsetsize, gid_t __user *grouplist);
 
+asmlinkage int my_syscall(int x, int y);
+
+asmlinkage int my_syscall2(char string[]);
+
 asmlinkage long sys_acct(const char __user *name);
 asmlinkage long sys_capget(cap_user_header_t header,
 				cap_user_data_t dataptr);

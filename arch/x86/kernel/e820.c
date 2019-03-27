@@ -1150,6 +1150,7 @@ void __init setup_memory_map(void)
 
 	who = x86_init.resources.memory_setup();
 	memcpy(e820_saved, e820, sizeof(struct e820map));
+	printk("Hello World from Tyler Sulsenti (10413031)\n");
 	printk(KERN_INFO "e820: BIOS-provided physical RAM map:\n");
 	e820_print_map(who);
 }
